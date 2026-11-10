@@ -1,0 +1,90 @@
+:root {color-scheme:dark}
+.stApp {background:#0c131c;color:#e8edf4}
+.stApp::before {content:"";position:fixed;inset:0;pointer-events:none;background-size:cover;background-repeat:no-repeat;z-index:0}
+[data-testid="stAppViewContainer"] {position:relative;z-index:1;background:transparent}
+[data-testid="stSidebar"] {background:rgba(12,19,28,.97);border-right:1px solid #293745}
+html,body,button,input,textarea,.stApp {font-family:"Leelawadee UI","Tahoma",sans-serif}
+[data-testid="stMainBlockContainer"] {max-width:1320px;padding:2.2rem 2.5rem 3rem}
+[data-testid="stMainBlockContainer"] {background:rgba(12,19,28,.60);min-height:100vh}
+[data-testid="stHeader"] {background:transparent}
+#MainMenu,footer {visibility:hidden}
+[data-testid="stToolbar"] {visibility:hidden}
+h1,h2,h3 {letter-spacing:-.035em}
+h1 {font-size:clamp(1.9rem,3.5vw,2.65rem)!important;line-height:1.4!important;font-weight:750!important}
+h3 {font-size:1.3rem!important}
+p {line-height:1.8}
+.brand {display:flex;align-items:center;gap:12px;min-width:0;border-bottom:1px solid #26323f;padding-bottom:23px;margin-bottom:30px}
+.brand-logo {display:block;flex:0 0 auto;width:96px;height:96px;object-fit:contain;filter:drop-shadow(0 4px 12px #0005)}
+.brand-copy {min-width:0}
+.brand-name {font-size:26px;line-height:1.45;letter-spacing:0;font-weight:800;color:#f2cf67;white-space:nowrap}
+.brand-sub {color:#96a9bd;font-size:11px;letter-spacing:0;margin-top:3px;line-height:1.7}
+.brand--compact {gap:10px;padding-bottom:16px;margin-bottom:8px}
+.brand--compact .brand-logo {width:68px;height:68px}
+.brand--compact .brand-name {font-size:21px}
+.brand--compact .brand-sub {font-size:10px}
+.eyebrow,.section-label {color:#7dcab7;font-size:10px;font-weight:750;letter-spacing:.16em;margin-bottom:8px}
+.intro {color:#96a9bd;font-size:15px;line-height:1.9;margin:0 0 24px}
+.section-label {color:#8a9fb4}.lower-section {margin-top:24px}
+[data-testid="stMetric"] {border:1px solid #283542;border-radius:13px;padding:15px 19px;background:#111d28;margin:6px 0 23px}
+[data-testid="stMetricLabel"] {font-size:12px;color:#9cacc0}
+[data-testid="stMetricValue"] {font-size:26px;font-weight:700}
+[data-testid="stMetricDelta"] {font-size:11px;color:#85a29f}
+.st-key-summary-strip [data-testid="stMetric"] {text-align:center}
+.st-key-summary-strip [data-testid="stMetricLabel"] {justify-content:center}
+[data-testid="stVerticalBlockBorderWrapper"]>div,[data-testid="stVerticalBlock"][style*="border:"] {border-color:#293745!important;border-radius:16px!important;background:#111b27}
+.st-key-login-panel,.st-key-history-panel,.st-key-analysis-panel,.st-key-road-panel,.st-key-appearance-panel,.st-key-admin-ai-panel,.st-key-admin-member-panel,.st-key-admin-admin-panel,.st-key-audit-panel,.st-key-formula-source-panel {background:rgba(17,27,39,.97)!important;border-color:#344554!important;border-radius:16px!important;box-shadow:0 8px 28px #0003}
+.background-preview {min-height:220px;padding:28px;border:1px solid #3d555b;border-radius:12px;background-color:#0c131c;background-size:cover;display:flex;align-items:center;justify-content:center}
+.background-preview-card {width:100%;max-width:320px;padding:22px;border:1px solid #3d555b;border-radius:12px;background:rgba(17,27,39,.96);color:#e8edf4;box-shadow:0 8px 24px #0004}
+.background-preview-card strong {display:block;color:#f2cf67;font-size:20px;margin-bottom:8px}
+.background-preview-card p {color:#b7c7d5;font-size:14px;margin:0 0 14px}
+.background-preview-action {display:inline-block;border-radius:8px;padding:8px 16px;background:#8bd8c4;color:#102a26;font-weight:650}
+.usage-summary {padding:14px 18px;border:1px solid #49635e;border-radius:12px;background:#111b27;color:#bbcbd8;font-size:14px;margin-bottom:6px}
+.usage-title {color:#8bd8c4;font-size:15px;font-weight:700;margin-bottom:5px}
+.usage-counters {display:flex;justify-content:space-between;flex-wrap:wrap;gap:5px 22px}
+.usage-summary strong {color:#f2cf67;font-size:24px;margin:0 4px}
+[data-testid="stExpander"] {border-color:#293745!important;border-radius:12px}
+[data-testid="stFileUploaderDropzone"] {background:#15282b;border:1px dashed #42665e;border-radius:12px;padding:22px 15px}
+.stButton>button,.stDownloadButton>button,.stFormSubmitButton>button {border-radius:9px;min-height:42px;font-weight:650}
+.stButton>button[kind="primary"],.stFormSubmitButton>button[kind="primary"] {background:#8bd8c4;color:#102a26;border-color:#8bd8c4}
+.stFormSubmitButton>button[kind="primaryFormSubmit"] {color:#102a26}
+.stButton>button[kind="primary"]:hover {background:#abe7d7;color:#102a26;border-color:#abe7d7}
+button:focus-visible,input:focus-visible,textarea:focus-visible,a:focus-visible {outline:3px solid #a0e3d0!important;outline-offset:3px}
+[data-testid="stTextArea"] textarea,[data-testid="stTextInput"] input {background:#0d1722;color:#e8edf4}
+[data-testid="stTextArea"] textarea {font-variant-numeric:tabular-nums;line-height:1.8;letter-spacing:.07em}
+[data-testid="stAlert"] {border-radius:10px;font-size:13px}
+.empty-result {min-height:235px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px 16px}
+.empty-icon {display:grid;place-items:center;width:55px;height:55px;border:1px solid #3d555b;border-radius:17px;background:#1a3034;color:#8bd8c4;font-size:28px;margin-bottom:16px}
+.empty-title {font-size:16px;color:#d1dfeb;margin-bottom:7px}.empty-result p{font-size:13px;color:#8fa3b9}
+.recommend-label {font-size:11px;color:#8bd8c4;margin-top:15px}.recommend-name{font-size:29px;font-weight:800;color:#ecf5f5;margin:4px 0}
+.analysis-result-footer {display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 22px;font-size:14px;color:#edf3f8;font-weight:600;line-height:1.8;padding-bottom:4px}
+.analysis-result-footer strong {font-weight:750}
+.st-key-page-header {overflow:visible!important;border-bottom:1px solid #26323f;padding-bottom:23px;margin-bottom:30px}
+.st-key-page-header .brand {border:0;padding-bottom:0;margin-bottom:0}
+.st-key-page-menu button {min-width:44px;min-height:44px;border-radius:9px;color:#a5ead5}
+.money-recommendation {padding:14px 16px;border:1px solid #356054;border-radius:10px;background:#17342e;color:#c9eee2;margin:8px 0 12px;font-size:15px}
+.money-recommendation strong {color:#a5ead5;font-size:22px}
+.money-recommendation span {display:block;font-size:13px;margin-top:6px}
+.digit-line {display:flex;gap:7px;flex-wrap:wrap;margin:15px 0 16px}
+.digit {display:grid;place-items:center;flex:1;min-width:30px;max-width:51px;aspect-ratio:1;border-radius:10px;font-size:22px;font-weight:750}
+.digit.take {background:#8bd8c4;color:#12322c;border:1px solid #9ce5d1}.digit.omit{background:#36232e;color:#f1a5ae;border:1px solid #6b3947}
+.road-scroll {overflow:auto;border:1px solid #334453;border-radius:8px;max-height:350px;background:#0c1621}
+table.road {border-collapse:collapse;min-width:100%;width:max-content;font-variant-numeric:tabular-nums}
+table.road td {min-width:33px;width:33px;height:29px;border:1px solid #273847;text-align:center;font-size:16px;font-weight:650;padding:0}
+.d0,.d7{color:#c6cfda}.d1,.d4{color:#eeb55f}.d2{color:#69b8ff}.d3,.d8{color:#ff7b85}.d5{color:#75daca}.d6{color:#b5a2f6}.d9{color:#d77c6f}
+.road-axis {display:flex;justify-content:space-between;gap:15px;font-size:10px;color:#8a9eaf;margin:10px 0 19px}.road-axis span{color:#6e8799}
+.app-footer {display:flex;justify-content:space-between;gap:15px;border-top:1px solid #26323f;margin-top:35px;padding-top:18px;font-size:11px;color:#7890a5}
+@media(max-width:700px){[data-testid="stMainBlockContainer"]{padding:1.6rem 1rem}.brand-name{font-size:14px}.brand-sub{font-size:8px}.intro{font-size:13px}[data-testid="stMetric"]{padding:11px;margin-bottom:10px}[data-testid="stMetricValue"]{font-size:23px}.digit-line{gap:4px}.digit{font-size:17px;min-width:23px;border-radius:7px}.app-footer{flex-direction:column}.road-axis{font-size:9px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media(max-width:700px){
+  .brand {gap:10px}
+  .brand-logo {width:68px;height:68px}
+  .brand-name {font-size:21px}
+  .brand-sub {font-size:10px}
+  .st-key-summary-strip [data-testid="stHorizontalBlock"]{flex-wrap:nowrap!important;gap:6px!important}
+  .st-key-summary-strip [data-testid="stColumn"]{min-width:0!important;flex:1 1 0!important;width:0!important}
+  .st-key-summary-strip [data-testid="stMetric"]{padding:10px 8px}
+  .st-key-summary-strip [data-testid="stMetricLabel"]{font-size:10px;white-space:nowrap}
+  .st-key-summary-strip [data-testid="stMetricValue"]{font-size:22px}
+  .st-key-digit-inputs [data-testid="stHorizontalBlock"]{flex-wrap:wrap!important;gap:6px!important}
+  .st-key-digit-inputs [data-testid="stColumn"]{min-width:0!important;flex:0 0 calc(20% - 5px)!important;width:calc(20% - 5px)!important}
+}
